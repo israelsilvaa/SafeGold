@@ -13,7 +13,7 @@
 <body class="bg-url:">
 
 <div class="row">
-    <div class="col-3">
+    <div class="col-4">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-warning" style="width: 280px; height: 100%;">
             <a href="/painel.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
               <i class="bi bi-coin fs-1"></i>
@@ -24,7 +24,7 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
-                <a href="#" class="nav-link text-white bg-dark" aria-current="page">
+                <a href="/painel.html" class="nav-link text-white" aria-current="page">
                   <i class="bi bi-house-door-fill"></i>
                   <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
                   
@@ -39,7 +39,7 @@
                 </a>
               </li>
               <li>
-                <a href="/simulação.html" class="nav-link text-white">
+                <a href="#" class="nav-link text-white bg-dark active">
                   <i class="bi bi-graph-up"></i>
                   <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
                   Simulação
@@ -47,7 +47,7 @@
               </li>
               <li>
                 <a href="/laravel.html" class="nav-link text-white">
-                  <i class="bi bi-filetype-php"></i>
+                    <i class="bi bi-filetype-php"></i>
                   <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
                   Laravel
                 </a>
@@ -69,50 +69,22 @@
         </div>
     </div>
 
-    <div class="col-8 ">
+    <div class="col-5 ">
         <div class="card">
           <div class="d-flex">
             <div class="card-body ">
                 <h5>Israel silva</h5>
                 <p>Saldo: R$ 100,00</p>
-              <form class="p-5 p-md-5 border rounded-3 bg-light">
-                <select class="form-select form-select-sm" required aria-label=".form-select-sm example">
-                  <option selected>Selecione qual a transação</option>
-                  <option value="1">Deposito</option>
-                  <option value="2">Transferência</option>
-                </select>
-                <label>Valor:</label>
-                <input type="number" placeholder="R$20"><br>
-                <a href="" class="btn btn-sm btn-primary">Enviar</a>
-              </form>
-            </div>
-            <div class="card-body">
-              <h5>Conta 2</h5>
-              <p>Saldo: R$ 50,00</p>
-              <form class="p-5 p-md-5 border rounded-3 bg-light">
-                <select class="form-select form-select-sm" required aria-label=".form-select-sm example">
-                  <option selected>Selecione qual a transação</option>
-                  <option value="1">Deposito</option>
-                  <option value="2">Transferência</option>
-                </select>
-                <label>Valor:</label>
-                <input type="number" placeholder="R$20"><br>
-                <a href="" class="btn btn-sm btn-primary">Enviar</a>
-              </form>
-            </div>
-            <div class="card-body">
-              <h5>Conta 3</h5>
-              <p>Saldo: R$ 10,00</p>
-              <form class="p-5 p-md-5 border rounded-3 bg-light">
-                <select class="form-select form-select-sm" required aria-label=".form-select-sm example">
-                  <option selected>Selecione qual a transação</option>
-                  <option value="1">Deposito</option>
-                  <option value="2">Transferência</option>
-                </select>
-                <label>Valor:</label>
-                <input type="number" placeholder="R$20"><br>
-                <a href="" class="btn btn-sm btn-primary">Enviar</a>
-              </form>
+                <form class="p-md-5 border rounded-3 bg-light">
+                    <select class="form-select form-select-sm" required aria-label=".form-select-sm example">
+                    <option selected>Tipo de bloqueio</option>
+                    <option value="1">Com Bloqueio</option>
+                    <option value="2">Sem Bloqueio</option>
+                    </select>
+                    <label>Valor:</label>
+                    <input type="number" placeholder="2000 transações"><br>
+                    <a href="" class="btn btn-primary">Simular</a>
+                </form>
             </div>
           </div>
         </div>
